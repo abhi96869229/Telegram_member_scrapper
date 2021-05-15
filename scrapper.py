@@ -8,8 +8,7 @@ from telethon import functions, types
 
 api_id = os.environ.get("API_ID")
 api_hash = os.environ.get("API_HASH")
-owner = os.environ.get("USER_ID")
-owner = int(owner)
+
 string_session = os.environ.get("STRING_SESSION")
 chan = os.environ.get("GROUP1")
 chann = os.environ.get("GROUP2")
