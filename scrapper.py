@@ -1,5 +1,4 @@
 import os
-import time
 from telethon.sync import TelegramClient
 from telethon import TelegramClient,events,sync
 from telethon.sessions import StringSession
@@ -17,7 +16,7 @@ chann = os.environ.get("GROUP2")
 client = TelegramClient(StringSession(string_session), api_id, api_hash)
 client.start()
 usersscraped = list()
-cm = 0
+
 for user in client.iter_participants(chan):
     try:
         userinfo = client(functions.users.GetFullUserRequest(
@@ -39,11 +38,6 @@ for user in client.iter_participants(chan):
                 ))
                 usersscraped.append(user.username)
                 print("useradded")
-                cm = cm+1
-                print(cm)
-                if cm%20 == 0:
-                    time.sleep(90000)
-                    client.send_message(owner,"BOT STARTED.")
             except:
                  pass
         except:
