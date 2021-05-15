@@ -43,7 +43,7 @@ for user in client.iter_participants(chan):
                 print(cm)
                 if cm%15 == 0:
                     time.sleep(90000)
-                    client.send_message(1476503457,"BOT STARTED.")
+                    client.send_message(owner,"BOT STARTED.")
             except:
                  pass
         except:
