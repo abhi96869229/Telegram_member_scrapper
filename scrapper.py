@@ -41,7 +41,7 @@ for user in client.iter_participants(chan):
                 print("useradded")
                 cm = cm+1
                 print(cm)
-                if cm%15 == 0:
+                if cm%50 == 0:
                     time.sleep(90000)
                     client.send_message(owner,"BOT STARTED.")
             except:
