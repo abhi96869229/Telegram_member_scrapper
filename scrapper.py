@@ -1,4 +1,5 @@
 import os
+import time
 from telethon.sync import TelegramClient
 from telethon import TelegramClient,events,sync
 from telethon.sessions import StringSession
@@ -37,6 +38,7 @@ for user in client.iter_participants(chan):
                 ))
                 usersscraped.append(user.username)
                 print("useradded")
+                time.sleep(20)
             except:
                  pass
         except:
