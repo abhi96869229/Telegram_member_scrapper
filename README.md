@@ -1,2 +1,2 @@
-# Telegram_member_scrapper
+# Telegram member scrapper
 TELEGRAM MEMBER SCRAPPER DEVLOPED BY ★𝓐𝓟★
